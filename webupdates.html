@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Updates</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sometype+Mono:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+      body {
+        background-color: #000000;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        min-height: 100vh;
+        margin: 0;
+      }
+      .logo-link img {
+        width: 100px;
+        height: auto;
+        border-radius: 8px;
+        margin-top: 20px;
+      }
+    </style>
+</head>
+<body>
+   <button id="menuToggle" class="block" aria-label="open" style="-webkit-tap-highlight-color: transparent;">
+     <div class="toggleline line-top"></div>
+     <div class="toggleline line-middle"></div>
+     <div class="toggleline line-bottom"></div>
+   </button>
+    <div class="menu-container" id="navMenu">
+      <nav class="menu-list">
+        <a href="index.html" class="menu-item">Home</a>
+      </nav>
+    </div>
+    
+   <button id="rainBtn" class="rain-btn off" style="-webkit-tap-highlight-color: transparent;">
+     <img src="images/rainfeatureON.png" class="rain-icon icon-on">
+     <img src="images/rainfeatureOFF.png" class="rain-icon icon-off">
+   </button>
+
+  <header class="background-linear">
+    <div class="number" id="word">
+      <span id="11">W</span><span id="12">e</span><span id="13">b</span><span id="14">s</span><span id="15">i</span><span id="16">t</span><span id="17">e</span>
+      <span id="race">Updates</span>
+    </div>
+    <div class="intro" style="margin-top: 45px;">
+    </div>
+  </header>
+  <p style="flex: 1; text-align: center; color: gray; display: flex; align-items: center; justify-content: center;">No updates found</p>
+  
+  <!-- JavaScripts -->
+  <script src="rainingstuff.js"></script>
+  <script src="MenuBruh.js"></script>
+</body>
+</html>

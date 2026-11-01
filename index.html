@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sometype+Mono:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+      body {
+        background-color: #000000;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        min-height: 100vh;
+        margin: 0;
+      }
+      .logo-link img {
+        width: 100px;
+        height: auto;
+        border-radius: 8px;
+        margin-top: 20px;
+      }
+    </style>
+</head>
+<body>
+   <button id="menuToggle" class="block" aria-label="open" style="-webkit-tap-highlight-color: transparent;">
+     <div class="toggleline line-top"></div>
+     <div class="toggleline line-middle"></div>
+     <div class="toggleline line-bottom"></div>
+   </button>
+    <div class="menu-container" id="navMenu">
+      <nav class="menu-list">
+        <a href="readme.html" class="menu-item" style="color: #fff;">Read Me</a>
+      </nav>
+    </div>
+    
+   <button id="rainBtn" class="rain-btn off" style="-webkit-tap-highlight-color: transparent;">
+     <img src="images/rainfeatureON.png" class="rain-icon icon-on">
+     <img src="images/rainfeatureOFF.png" class="rain-icon icon-off">
+   </button>
+
+  <header class="background-linear">
+    <div class="number" id="word">
+      <span id="11">N</span><span id="12">u</span><span id="13">m</span><span id="14">b</span><span id="15">e</span><span id="16">r</span>
+      <span id="race">Race</span>
+    </div>
+    <div class="intro">
+     <div class="aboutgameproject"><b>A game project to play inside Termux on Android</b></div>
+     <a href="https://github.com/Number-Race/NumberRace" target="_blank" class="github-link">
+      <img src="images/github-white-icon.png" class="gh-normal">
+     </a>
+    </div>
+  </header>
+
+  <section class="tab">
+    <h2>Introduction</h2>
+    <ul>
+      <li>Game Project was made fully on <b style="color: #306998">Pyt<b style="color: #ffd43b">hon</b></b>. Other like <b class="cs">C#</b>, <b style="color: #000080">Lua</b> or either <b class="ruby">Ruby</b> are might be soon!</li>
+      <li>No pips</li>
+      <li>Closed Source</li>
+    </ul>
+  </section>
+
+  <section class="tab">
+    <h2>Features</h2>
+    <ul>
+      <li>Some few main gamemodes like <b style="color: hwb(120 6% 0%)">PvE</b> and <b style="color: hwb(180 0% 0%)">Endless</b>. Inside there few <b style= "color: hwb(120 26% 0%)">Minimodes</b> like <b style="color: lime">Duel</b>, <b style="color: yellow">Duo</b> and etc</li>
+      <li>The account system and <b style="color: #0067d7">Statistic</b></li>
+      <li>A ton of options in <b>Settings</b></li>
+      <li>And much few more!</li>
+    </ul>
+  </section>
+
+  <section class="tab">
+    <h2>Showcases</h2>
+    <div class="showcases">
+      <img src="showcases/StartUp.jpg" alt="StartUp Screen">
+      <img src="showcases/MainMenu.jpg" alt="Main Menu">
+      <img src="showcases/Statistic.jpg" alt="Statistic">
+      <img src="showcases/PVE.jpg" alt="PvE">
+      <img src="showcases/Ranking.jpg" alt="Rankin">
+    </div>
+  </section>
+
+  <section class="tab">
+    <h2>Installation</h2>
+    <ol>
+      <li>Download <a href="https://github.com/termux/termux-app/releases" class="btn-termux" style="-webkit-tap-highlight-color: transparent;">Termux</a></li>
+      <li>Copy this command
+          <div class="code-block-wrapper">
+            <button class="copy-btn" aria-label="Copy source block code">
+              <svg class="copy-icon" viewBox="0 0 16 16" width="16" height="16"><path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path></svg>
+              <svg class="check-icon" viewBox="0 0 16 16" width="16" height="16"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path></svg>
+            </button>
+           <pre class="language-bash"><code class="language-bash">curl -fsSL https://raw.githubusercontent.com/Crex56/NumberRace/refs/heads/main/install | bash</code></pre>
+           v1.1
+          </div>
+      </li>
+    </ol>
+  </section>
+  <section class="tab footer-tab">
+    <div class="cr">© NumberRace 2026. All rights reseved | <a href="webupdates.html" class="webver">v1</a></div>
+  </section>
+
+
+  <!-- Prism -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-bash.min.js"></script>
+  
+  <!-- JavaScripts -->
+  <script src="rainingstuff.js"></script>
+  <script src="MenuBruh.js"></script>
+  <script src="copy.js"></script>
+  <script src="showcases.js"></script>
+</body>
+</html>
